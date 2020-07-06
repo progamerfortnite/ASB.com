@@ -1,9 +1,3 @@
-/* Template: Evolo - StartUp HTML Landing Page Template
-   Author: Inovatik
-   Created: June 2019
-   Description: Master CSS file
-*/
-
 /*****************************************
 Table Of Contents:
 
@@ -170,6 +164,7 @@ a.white {
 	color: #00bfd8;
 	text-decoration: none;
 }
+
 
 .btn-outline-reg {
 	display: inline-block;
