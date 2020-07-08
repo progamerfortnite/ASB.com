@@ -1,6 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #01bfd9; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0ba9e6; 
+}
+</style>`
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -58,10 +79,10 @@
                     <a class="nav-link page-scroll" href="#pricing">Pricing</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#download">Downloads</a>
+                    <a class="nav-link page-scroll" href="download.html">Downloads</a>
                 </li>
 				                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="https://discord.gg/rUZEupb">Join our Discord</a>
+                    <a class="nav-link page-scroll" href="discord.html">Join our Discord</a>
                 </li>
 				<li class="nav-item">
                     <a class="nav-link page-scroll" href="#testimonials">Reviews</a>
@@ -78,6 +99,10 @@
                             <h1><span>A Discord SelfBot</span></h1>
                             <p class="p-large">ASB is a SelfBot that is looking forward in making your Discord Expririence easier!</p>
                             <a class="btn-solid-lg page-scroll" href="#aboutdcbot">DISCOVER</a>
+                             <br>
+                              <br>
+                               <br>
+                                <br>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -213,22 +238,6 @@
         </div>
     </div>
 
-<div id="download">
-<h2>ASB | Downloads</h2>
-<div class="card">
-                        <div class="card-body">
-                            <div class="card-title">Download ASB</div>
-                            <ul class="list-unstyled li-space-lg">
-                                <li class="media">
-                                </li>
-                            </ul>
-                            <div class="button-wrapper">
-                                <a class="btn-solid-reg page-scroll" href="https://cdn.discordapp.com/attachments/726603719491452938/727310234049052723/Atomics_SelfBot_Public_V7.rar">DOWNLOAD</a>
-                            </div>
-                        </div>
-                    </div> 
-					</div>
-</div>
 	    <div id="testimonials" class="cards-2">
     <div class="slider-2">
         <div class="container">
@@ -339,33 +348,6 @@
         </div>
     </div>
 	</div>
-	    <!-- Video -->
-    <div class="basic-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Tutorial/Showcase Video</h2>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    
-                    <!-- Video Preview -->
-                    <div class="image-container">
-                        <div class="video-wrapper">
-                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=ca7-i-skwNo" data-effect="fadeIn">
-                                <img class="img-fluid" src="https://cdn.discordapp.com/attachments/709113327846031413/727247677858906142/ASB_long_gradient.png" alt="alternative">
-                                <span class="video-play-button">
-                                    <span></span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-	
 
 
 
@@ -398,8 +380,94 @@
 </body>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+.chat-box {
+    width: 340px;
+}
+
+.chat-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #34e5eb;
+    text-align: left;
+}
+
+.chat-message {
+    border-radius: 5px;
+    box-shadow: 0 5px 36px 0px rgba(0, 0, 0, .2);
+    padding: 8px;
+    font-size: 12px;
+    width: 170px;
+    background-color: #fff;
+    text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+    .chat-box {
+        width: 280px;
+    }
+    .chat-message {
+        width: 120px;
+    }
+}
+
+.chat-right {
+    float: right;
+    text-align: left;
+}
+
+.chat-left {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.chat-typing {
+    margin-top: 80px;
+    font-size: 13px;
+    opacity: 0.7;
+    text-align: left;
+}
+
+.chat-sendmessage-box {
+    border-radius: 5px;
+    box-shadow: 0 5px 36px 0px rgba(0, 0, 0, .2);
+    padding: 8px;
+    font-size: 14px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #848484;
+    background-color: #fff;
+    text-align: left;
+}
 .checked {
   color: orange;
+}
+@keyframes blink {
+    0% {
+        opacity: .2;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .2;
+    }
+}
+
+.saving span {
+    animation-name: blink;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+.saving span:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.saving span:nth-child(3) {
+    animation-delay: .4s;
 }
 </style>
 </html>
